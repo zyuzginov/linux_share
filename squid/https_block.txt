@@ -1,0 +1,44 @@
+Создадим файл с сайтами что будем глобально блокировать.
+
+nano /home/proxy/lists/httpssoc.acl
+#################################################
+#       Глупые HTTPS развлечения                #
+#################################################
+(^|\.)vk\.com$
+(^|\.)ok\.ru$
+(^|\.)facebook\.com$
+(^|\.)youtube\.com$
+(^|\.)yaplakal\.com$
+(^|\.)yapfiles\.ru$
+(^|\.)fishki\.net$
+(^|\.)vasi\.net$
+(^|\.)pikabu\.ru$
+(^|\.)joyreactor\.cc$
+(^|\.)sasisa\.ru$
+(^|\.)zaycev\.net$
+ 
+#################################################
+#       Глупые запросы оффиса                   #
+#################################################
+(^|\.)microsoft\.com$
+(^|\.)office\.com$
+(^|\.)office\.net$
+(^|\.)microsoftstore\.com$
+(^|\.)officeapps\.live\.com$
+(^|\.)autodiscover\.fs\.ess$
+(^|\.)msecnd\.net$
+(^|\.)windowsupdate\.com$
+(^|\.)windows\.com$
+Затем поправим саму конфигурацию Squid
+
+sudo nano /etc/squid3/squid.conf
+Добавим наш список
+
+acl httpssoclist        dstdom_regex -i "/home/proxy/lists/httpssoc.acl"
+Запретим доступ простым смертным
+
+http_access             allow   !blacklist      !soclist        !httpssoclist   AD_auth
+Применим конфигурацию
+
+sudo squid3 -k parse
+sudo squid3 -k reconfigure

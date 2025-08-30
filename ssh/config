@@ -1,0 +1,24 @@
+### default for all ##
+Host *
+     ForwardAgent no
+     ForwardX11 no
+     ForwardX11Trusted yes
+     #User zzz
+     #Port 22
+     Protocol 2
+     ServerAliveInterval 60
+     ServerAliveCountMax 30
+
+Host zool.ihc
+  Hostname	210.210.210.1
+  user	zzz
+  port	22
+  IdentityFile ~/.ssh/id_rsa
+#  RemoteCommand tmux
+
+Host pi
+  Hostname	192.168.10.204
+  user	zzz
+  port	22
+  IdentityFile ~/.ssh/id_rsa
+#    RemoteCommand tmux
