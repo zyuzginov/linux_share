@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.0.11" ConfigVersion="13">
+<doublecmd DCVersion="1.1.11 beta" ConfigVersion="15">
   <Toolbars>
     <MainToolbar>
       <Row>
@@ -153,8 +153,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>80</Left>
-      <Top>48</Top>
+      <Left>354</Left>
+      <Top>95</Top>
       <Width>800</Width>
       <Height>480</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -166,7 +166,7 @@
     <POFileName>doublecmd.ru.po</POFileName>
   </Language>
   <Behaviours>
-    <GoToRoot>False</GoToRoot>
+    <GoToRoot>True</GoToRoot>
     <ShowCurDirTitleBar>False</ShowCurDirTitleBar>
     <ActiveRight>False</ActiveRight>
     <RunInTerminalStayOpenCmd>x-terminal-emulator</RunInTerminalStayOpenCmd>
@@ -190,6 +190,7 @@
     <PersonalizedMega>Мб</PersonalizedMega>
     <PersonalizedGiga>Гб</PersonalizedGiga>
     <PersonalizedTera>Тб</PersonalizedTera>
+    <ConfirmQuit>False</ConfirmQuit>
     <MinimizeToTray>False</MinimizeToTray>
     <AlwaysShowTrayIcon>False</AlwaysShowTrayIcon>
     <Mouse>
@@ -206,6 +207,7 @@
     <CustomColumnsChangeAllColumns>False</CustomColumnsChangeAllColumns>
     <BriefViewFileExtAligned>True</BriefViewFileExtAligned>
     <DateTimeFormat>dd.mm.yyyy hh:nn:ss</DateTimeFormat>
+    <ColumnsTitleLikeValues>False</ColumnsTitleLikeValues>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
     <ShowSystemFiles>False</ShowSystemFiles>
@@ -298,6 +300,12 @@
       <Style>0</Style>
       <Quality>0</Quality>
     </TreeViewMenu>
+    <StatusBar>
+      <Name>default</Name>
+      <Size>0</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </StatusBar>
   </Fonts>
   <Colors>
     <UseCursorBorder>False</UseCursorBorder>
@@ -332,7 +340,6 @@
       <Error>255</Error>
       <Success>32768</Success>
     </LogWindow>
-    <FileFilters/>
   </Colors>
   <ToolTips>
     <ShowToolTipMode>True</ShowToolTipMode>
@@ -376,9 +383,9 @@
     <LogWindow>False</LogWindow>
     <TermWindow>False</TermWindow>
     <KeyButtons>True</KeyButtons>
-    <InterfaceFlat>False</InterfaceFlat>
+    <InterfaceFlat>True</InterfaceFlat>
     <DriveFreeSpace>False</DriveFreeSpace>
-    <DriveIndicator>False</DriveIndicator>
+    <DriveIndicator>True</DriveIndicator>
     <ProgressInMenuBar>True</ProgressInMenuBar>
     <PanelOfOperationsInBackground>True</PanelOfOperationsInBackground>
     <HorizontalFilePanels>False</HorizontalFilePanels>
@@ -398,6 +405,7 @@
     <ColumnsView>
       <AutoSaveWidth>True</AutoSaveWidth>
       <TitleStyle>2</TitleStyle>
+      <LongInStatus>False</LongInStatus>
     </ColumnsView>
     <BriefView>
       <FileExtAligned>True</FileExtAligned>
@@ -410,6 +418,7 @@
     <ExtraLineSpan>2</ExtraLineSpan>
     <FolderPrefix>[</FolderPrefix>
     <FolderPostfix>]</FolderPostfix>
+    <RenameConfirmMouse>False</RenameConfirmMouse>
   </FilesViews>
   <Keyboard>
     <Typing>
@@ -487,142 +496,6 @@
     <CharacterLimit>32</CharacterLimit>
     <Position>0</Position>
     <ActionOnDoubleClick>2</ActionOnDoubleClick>
-    <OpenedTabs>
-      <Left>
-        <ActiveTab>0</ActiveTab>
-        <Tab>
-          <FileView Type="columns">
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path Filename="user">/media/zool/Ventoy/RedOS/Files/configs/home/</Path>
-                  <Path Filename="config">/media/zool/Ventoy/RedOS/Files/configs/home/user/</Path>
-                  <Path Filename="cinnamon">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/</Path>
-                  <Path Filename="spices">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/cinnamon/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/cinnamon/spices/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/cinnamon/</Path>
-                  <Path Filename="doublecmd">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/doublecmd/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/home/user/config/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/home/user/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/home/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/configs/</Path>
-                  <Path Filename="rpm">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/rpm/</Path>
-                  <Path Filename="scripts">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/scripts/</Path>
-                  <Path Filename="wallpapers">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/wallpapers/</Path>
-                  <Path Filename="wine">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/wine/</Path>
-                  <Path Filename="Шаблоны">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/Шаблоны/</Path>
-                  <Path Filename="bin">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/bin/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/Files/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/RedOS/</Path>
-                  <Path Filename="VPN">/media/zool/Ventoy/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/VPN/</Path>
-                  <Path Filename="Зюзгинов">/media/zool/Ventoy/</Path>
-                  <Path Filename="CherryTree">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/CherryTree/</Path>
-                  <Path Filename="DEV">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/DEV/</Path>
-                  <Path Filename="DEV">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/DEV/</Path>
-                  <Path Filename="Life">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/Life/</Path>
-                  <Path Filename="OneNote">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="KOMIGAZ">/media/zool/Ventoy/Зюзгинов/OneNote/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/OneNote/KOMIGAZ/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/OneNote/</Path>
-                  <Path Filename="Рыбалка">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/Рыбалка/</Path>
-                  <Path Filename="Рыбалка">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="мухи">/media/zool/Ventoy/Зюзгинов/Рыбалка/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/Рыбалка/мухи/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/Рыбалка/</Path>
-                  <Path Filename="Рыбалка">/media/zool/Ventoy/Зюзгинов/</Path>
-                  <Path Filename="..">/media/zool/Ventoy/Зюзгинов/Рыбалка/</Path>
-                  <Path Filename="Увеличение скорости работы Ubuntu _ Русскоязычная документация по Ubuntu.pdf">/media/zool/Ventoy/Зюзгинов/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-      </Left>
-      <Right>
-        <ActiveTab>0</ActiveTab>
-        <Tab>
-          <FileView Type="columns">
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path Filename="..">/mnt/ext4/</Path>
-                  <Path Filename="..">/mnt/</Path>
-                  <Path Filename="home">/</Path>
-                  <Path Filename="zool">/home/</Path>
-                  <Path Filename="..">/home/zool/</Path>
-                  <Path Filename="zool">/home/</Path>
-                  <Path Filename="..">/home/zool/</Path>
-                  <Path Filename="zool">/home/</Path>
-                  <Path Filename="bin">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/bin/</Path>
-                  <Path Filename=".icons">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/.icons/</Path>
-                  <Path Filename=".themes">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/.themes/</Path>
-                  <Path Filename="fonts">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/fonts/</Path>
-                  <Path Filename="Документы">/home/zool/</Path>
-                  <Path Filename="code">/home/zool/Документы/</Path>
-                  <Path Filename="..">/home/zool/Документы/code/</Path>
-                  <Path Filename="..">/home/zool/Документы/</Path>
-                  <Path Filename="DEV">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/DEV/</Path>
-                  <Path Filename="Документы">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/Документы/</Path>
-                  <Path Filename="Изображения">/home/zool/</Path>
-                  <Path Filename="мухи">/home/zool/Изображения/</Path>
-                  <Path Filename="..">/home/zool/Изображения/мухи/</Path>
-                  <Path Filename="..">/home/zool/Изображения/</Path>
-                  <Path Filename="Документы">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/Документы/</Path>
-                  <Path Filename="WinApps">/home/zool/</Path>
-                  <Path Filename="HFS">/home/zool/WinApps/</Path>
-                  <Path Filename="..">/home/zool/WinApps/HFS/</Path>
-                  <Path Filename="..">/home/zool/WinApps/</Path>
-                  <Path Filename="Документы">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/Документы/</Path>
-                  <Path Filename="WinApps">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/WinApps/</Path>
-                  <Path Filename="Документы">/home/zool/</Path>
-                  <Path Filename="..">/home/zool/Документы/</Path>
-                  <Path Filename="..">/home/zool/</Path>
-                  <Path Filename="..">/home/</Path>
-                  <Path Filename="etc">/</Path>
-                  <Path Filename="sysctl.d">/etc/</Path>
-                  <Path Filename="..">/etc/sysctl.d/</Path>
-                  <Path Filename="systemd">/etc/</Path>
-                  <Path Filename="user">/etc/systemd/</Path>
-                  <Path Filename="..">/etc/systemd/user/</Path>
-                  <Path Filename="..">/etc/systemd/</Path>
-                  <Path Filename="vbox">/etc/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-      </Right>
-    </OpenedTabs>
   </Tabs>
   <Log Enabled="False" Count="0" LogFileWithDateInName="False">
     <FileName>%DC_CONFIG_PATH%/doublecmd.log</FileName>
@@ -636,6 +509,8 @@
     <DirHistory Save="True"/>
     <CmdLineHistory Save="True"/>
     <FileMaskHistory Save="True"/>
+    <VolumeSizeHistory Save="True"/>
+    <CreateDirectoriesHistory Save="True"/>
   </History>
   <QuickSearch>
     <MatchBeginning>True</MatchBeginning>
@@ -665,6 +540,8 @@
     <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
     <PathModifierElements>0</PathModifierElements>
     <DefaultTextEncoding>none</DefaultTextEncoding>
+    <DoubleClickEditPath>False</DoubleClickEditPath>
+    <SystemItemProperties>False</SystemItemProperties>
   </Miscellaneous>
   <Thumbnails Save="True">
     <Width>128</Width>
@@ -685,7 +562,7 @@
     <ShowHiddenDimmed>True</ShowHiddenDimmed>
     <ShowMode>3</ShowMode>
     <ShowOverlays>False</ShowOverlays>
-    <Size>24</Size>
+    <Size>16</Size>
     <DiskSize>16</DiskSize>
     <DiskAlpha>50</DiskAlpha>
     <ToolSize>24</ToolSize>
@@ -731,12 +608,19 @@
     <BackgroundColor>0</BackgroundColor>
     <FontColor>16777215</FontColor>
     <TextPosition>0</TextPosition>
+    <ImageShowTransparency>False</ImageShowTransparency>
+    <WrapText>False</WrapText>
+    <AutoCopy>True</AutoCopy>
+    <SynEditMask>*</SynEditMask>
+    <JpegQuality>80</JpegQuality>
   </Viewer>
   <Editor>
     <EditWaitTime>2000</EditWaitTime>
     <SynEditOptions>856075</SynEditOptions>
     <SynEditTabWidth>8</SynEditTabWidth>
     <SynEditRightEdge>80</SynEditRightEdge>
+    <SynEditBlockIndent>2</SynEditBlockIndent>
+    <FindWordAtCursor>True</FindWordAtCursor>
   </Editor>
   <Differ>
     <IgnoreCase>False</IgnoreCase>
@@ -765,12 +649,13 @@
     <FilterCopyLeft>True</FilterCopyLeft>
     <FilterDuplicates>True</FilterDuplicates>
     <FilterSingles>True</FilterSingles>
-    <FileMask>*</FileMask>
+    <FileMask Save="True">*</FileMask>
     <Colors>
       <Left>32768</Left>
       <Right>16711680</Right>
       <Unknown>255</Unknown>
     </Colors>
+    <DateTimeFormat>yyyy.mm.dd hh:nn:ss</DateTimeFormat>
   </SyncDirs>
   <InternalAssociations>
     <OfferToAddNewFileType>False</OfferToAddNewFileType>
@@ -783,6 +668,7 @@
     <FilenameStyle>0</FilenameStyle>
     <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
     <PathModifierElements>0</PathModifierElements>
+    <DefaultContextActions>True</DefaultContextActions>
   </InternalAssociations>
   <TreeViewMenu>
     <UseTVMDirectoryHotlistFMC>False</UseTVMDirectoryHotlistFMC>
@@ -874,15 +760,15 @@
   <ColumnsSets DefaultTitleHash="1848642058">
     <ColumnsSet UseFrameCursor="True">
       <Name>Default</Name>
+      <Unique>535E67F5-6D3E-43D9-82B7-4300FC807E28</Unique>
       <CustomView>True</CustomView>
       <FileSystem>&lt;General&gt;</FileSystem>
       <PixelsPerInch>96</PixelsPerInch>
-      <CursorBorder Enabled="True">
-        <Color>-2147483635</Color>
-      </CursorBorder>
+      <CursorBorder Enabled="True"/>
       <Columns>
         <Column>
           <Title>Имя</Title>
+          <Unique>60201DFC-17E6-4276-BE9C-342DBB5E9A2D</Unique>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
           <Width>450</Width>
           <Align>0</Align>
@@ -892,20 +778,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>65535</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>65535</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Тип</Title>
+          <Unique>2F187BD2-ACF8-473D-84BF-784676BF083D</Unique>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
           <Width>169</Width>
           <Align>0</Align>
@@ -915,20 +794,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>65535</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>65535</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Размер</Title>
+          <Unique>432CFCBB-43B3-4118-8E5C-0C75E1B6DD5A</Unique>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
           <Width>68</Width>
           <Align>1</Align>
@@ -938,20 +810,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>65535</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>65535</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Дата</Title>
+          <Unique>A2438014-CA8F-4077-8DCE-49A197BA0AB9</Unique>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
           <Width>167</Width>
           <Align>1</Align>
@@ -961,20 +826,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>65535</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>65535</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Атриб</Title>
+          <Unique>C26F48FE-C6D0-4F8B-9DE7-C1A29CBB7689</Unique>
           <FuncString>[DC().GETFILEATTR{}]</FuncString>
           <Width>100</Width>
           <Align>0</Align>
@@ -984,14 +842,6 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>65535</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>65535</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
@@ -1086,6 +936,11 @@
         <ArchiveExt>rar</ArchiveExt>
         <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
         <Flags>607</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>b64</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/base64/base64.wcx</Path>
+        <Flags>1</Flags>
       </WcxPlugin>
     </WcxPlugins>
     <WdxPlugins>

@@ -1,0 +1,354 @@
+{
+    "layout1": {
+        "type": "layout",
+        "height": 600,
+        "width": 800,
+        "pages": [
+            "search-page",
+            "my-stations-page",
+            "preferences-page"
+        ],
+        "search-page": {
+            "type": "page",
+            "title": "Find Station",
+            "sections": [
+                "find-station-section"
+            ]
+        },
+        "my-stations-page": {
+            "type": "page",
+            "title": "My Stations",
+            "sections": [
+                "station-list-section"
+            ]
+        },
+        "preferences-page": {
+            "type": "page",
+            "title": "Preferences",
+            "sections": [
+                "appearance-section",
+                "volume-section",
+                "youtube-section"
+            ]
+        },
+        "station-list-section": {
+            "type": "section",
+            "title": "List of stations",
+            "keys": [
+                "tree"
+            ]
+        },
+        "find-station-section": {
+            "type": "section",
+            "title": "Search Radio station",
+            "keys": [
+                "radio-search-widget"
+            ]
+        },
+        "appearance-section": {
+            "type": "section",
+            "title": "Appearance",
+            "keys": [
+                "icon-type",
+                "color-on",
+                "color-paused",
+                "channel-on-panel"
+            ]
+        },
+        "volume-section": {
+            "type": "section",
+            "title": "Volume",
+            "keys": [
+                "keep-volume-between-sessions",
+                "initial-volume"
+            ]
+        },
+        "youtube-section": {
+            "type": "section",
+            "title": "YouTube Download",
+            "keys": [
+                "youtube-download-cli",
+                "music-download-dir-select"
+            ]
+        }
+    },
+    "tree": {
+        "type": "list",
+        "height": 400,
+        "columns": [
+            {
+                "id": "inc",
+                "title": "Show in list",
+                "type": "boolean",
+                "default": true
+            },
+            {
+                "id": "name",
+                "title": "Title",
+                "type": "string"
+            },
+            {
+                "id": "url",
+                "title": "URL",
+                "type": "string"
+            }
+        ],
+        "default": [
+            {
+                "name": "Smooth Chill",
+                "url": "https://media-ssl.musicradio.com/ChillMP3",
+                "inc": true
+            },
+            {
+                "name": "Austrian Rock Radio",
+                "url": "http://live.antenne.at/arr",
+                "inc": true
+            },
+            {
+                "name": "R\u00e1dio KIKS Rock",
+                "url": "https://stream.radiokiks.sk/kiks_rock.mp3",
+                "inc": true
+            },
+            {
+                "name": "Radio BOB",
+                "url": "http://live6.infonetmedia.si/Europa05",
+                "inc": true
+            },
+            {
+                "name": "Deep House Radio",
+                "url": "http://62.210.105.16:7000/stream",
+                "inc": true
+            }
+        ],
+        "value": [
+            {
+                "name": "Smooth Chill",
+                "url": "https://media-ssl.musicradio.com/ChillMP3",
+                "inc": true
+            },
+            {
+                "name": "Austrian Rock Radio",
+                "url": "http://live.antenne.at/arr",
+                "inc": true
+            },
+            {
+                "name": "R\u00e1dio KIKS Rock",
+                "url": "https://stream.radiokiks.sk/kiks_rock.mp3",
+                "inc": true
+            },
+            {
+                "name": "Radio BOB",
+                "url": "http://live6.infonetmedia.si/Europa05",
+                "inc": true
+            },
+            {
+                "name": "Deep House Radio",
+                "url": "http://62.210.105.16:7000/stream",
+                "inc": true
+            },
+            {
+                "name": "\u0421\u043f\u0443\u0442\u043d\u0438\u043a 91.2 fm",
+                "url": "https://str5.pcradio.ru/sputnik_ria_ru-med",
+                "inc": true
+            },
+            {
+                "name": "\u0421\u043f\u0443\u0442\u043d\u0438\u043a",
+                "url": "https://icecast-rian.cdnvideo.ru/voicerus",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \u0421\u041f\u0423\u0422\u041d\u0418\u041a / Radio Sputnik",
+                "url": "http://online.sputnikfm.ru:8000/sputnik_mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \"\u041c\u0430\u044f\u043a\"",
+                "url": "https://icecast-vgtrk.cdnvideo.ru/mayakfm",
+                "inc": true
+            },
+            {
+                "name": "\u041d\u0430\u0448\u0435 \u0440\u0430\u0434\u0438\u043e",
+                "url": "https://nashe1.hostingradio.ru:80/nashe-128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0415\u0432\u0440\u043e\u043f\u0430 \u043f\u043b\u044e\u0441",
+                "url": "http://ep128server.streamr.ru:8030/ep128",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0410\u0414\u0418\u041e \u0412\u0410\u041d\u042f",
+                "url": "https://icecast-radiovanya.cdnvideo.ru/radiovanya",
+                "inc": true
+            },
+            {
+                "name": "\u041c\u0438\u043b\u0438\u0446\u0435\u0439\u0441\u043a\u0430\u044f \u0432\u043e\u043b\u043d\u0430 \u041d\u041d",
+                "url": "https://radiomv.hostingradio.ru:80/radiomv128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u041d\u0430\u0440\u043e\u0434\u043d\u043e\u0435 \u0420\u0430\u0434\u0438\u043e",
+                "url": "http://178.88.167.62:8080/DALA_192",
+                "inc": true
+            },
+            {
+                "name": "\u041d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0435 \u0420\u0430\u0434\u0438\u043e \u0427\u0443\u0432\u0430\u0448\u0438\u0438 / Chuvash National Radio",
+                "url": "http://icecast.ntrk21.ru:8000/nacradio",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0410\u0414\u0418\u041e ENERGY - \u041c\u043e\u0441\u043a\u0432\u0430 104.2 FM",
+                "url": "http://pub0302.101.ru:8000/stream/air/aac/64/99",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e Jazz",
+                "url": "http://nashe1.hostingradio.ru/jazz-128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e ULTRA",
+                "url": "http://nashe1.hostingradio.ru/ultra-128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \u0412\u0435\u0441\u0442\u0438 \u0424\u041c",
+                "url": "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_192kbps",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \u041c\u043e\u043d\u0442\u0435 \u041a\u0430\u0440\u043b\u043e",
+                "url": "https://montecarlo.hostingradio.ru/montecarlo128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \u0420\u0435\u043a\u043e\u0440\u0434 (\u043e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u043a\u0430\u043d\u0430\u043b)",
+                "url": "http://radiorecord.hostingradio.ru/rr_main96.aacp",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \u0420\u043e\u0441\u0441\u0438\u0438",
+                "url": "http://mp3.ptr-vlad.ru:8000/Radio96",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0430\u0434\u0438\u043e \u0425\u0438\u0442 FM",
+                "url": "https://hitfm.hostingradio.ru/hitfm128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0435\u0442\u0440\u043e \u0424\u041c",
+                "url": "http://retroserver.streamr.ru:8043/retro128",
+                "inc": true
+            },
+            {
+                "name": "\u0420\u0443\u0441\u0441\u043a\u043e\u0435 \u0420\u0430\u0434\u0438\u043e",
+                "url": "https://stream.hoster.by/rusradio/russkoe/icecast.audio",
+                "inc": true
+            },
+            {
+                "name": "\u0421\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u0439 \u0434\u043e\u0436\u0434\u044c",
+                "url": "http://213.59.4.27:8000/silver128.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0422\u0430\u0432\u0430\u043d \u0420\u0430\u0434\u0438\u043e (\u0427\u0435\u0431\u043e\u043a\u0441\u0430\u0440\u044b)",
+                "url": "http://icecast.ntrk21.ru:8000/tavan",
+                "inc": true
+            },
+            {
+                "name": "\u0428\u0430\u043d\u0441\u043e\u043d \u0431\u0435\u0437 \u0446\u0435\u043d\u0437\u0443\u0440\u044b",
+                "url": "http://chanson.hostingradio.ru:8041/chanson-uncensored256.mp3",
+                "inc": true
+            },
+            {
+                "name": "\u0428\u0430\u043d\u0441\u043e\u043d \u0420\u0430\u0434\u0438\u043e",
+                "url": "http://chanson.hostingradio.ru:8041/chanson256.mp3?md5=RsBdyQmPwZBZdZRKVncpJw&e=1573674908",
+                "inc": true
+            }
+        ]
+    },
+    "icon-type": {
+        "type": "combobox",
+        "description": "Icon type",
+        "default": "SYMBOLIC",
+        "options": {
+            "Symbolic": "SYMBOLIC",
+            "Full Color": "FULLCOLOR",
+            "Bicolor": "BICOLOR"
+        },
+        "value": "BICOLOR"
+    },
+    "color-on": {
+        "type": "colorchooser",
+        "default": "#27ae60",
+        "dependency": "icon-type=SYMBOLIC",
+        "description": "Color of symbolic icon when playing a radio station",
+        "value": "#27ae60"
+    },
+    "color-paused": {
+        "type": "colorchooser",
+        "default": "#9fe1e7",
+        "dependency": "icon-type=SYMBOLIC",
+        "description": "Color of symbolic icon while a radio station is paused",
+        "value": "#9fe1e7"
+    },
+    "channel-on-panel": {
+        "type": "checkbox",
+        "description": "Show current radio station on the panel",
+        "default": false,
+        "value": false
+    },
+    "keep-volume-between-sessions": {
+        "type": "checkbox",
+        "description": "Remember volume after stopping the radio",
+        "default": true,
+        "value": true
+    },
+    "initial-volume": {
+        "type": "spinbutton",
+        "default": 50,
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "description": "Initial volume",
+        "tooltip": "The initial volume is applied when clicking on a radio stream and no other radio stream is already running",
+        "dependency": "keep-volume-between-sessions!=true",
+        "value": 50
+    },
+    "last-volume": {
+        "type": "generic",
+        "value": 80,
+        "default": 80
+    },
+    "last-url": {
+        "type": "generic",
+        "value": "http://radiorecord.hostingradio.ru/rr_main96.aacp",
+        "default": null
+    },
+    "youtube-download-cli": {
+        "type": "combobox",
+        "description": "YouTube Download CLI tool",
+        "tooltip": "The CLI tool used to download songs from YouTube",
+        "default": "yt-dlp",
+        "options": {
+            "yt-dlp": "yt-dlp",
+            "youtube-dl": "youtube-dl"
+        },
+        "value": "yt-dlp"
+    },
+    "music-download-dir-select": {
+        "type": "filechooser",
+        "description": "Download directory",
+        "tooltip": "Songs downloaded from YouTube will be saved to this directory.",
+        "default": "~/Music/Radio",
+        "select-dir": true,
+        "value": "~/Music/Radio"
+    },
+    "radio-search-widget": {
+        "type": "custom",
+        "file": "RadioSearchWidget.py",
+        "widget": "RadioSearchWidget"
+    },
+    "__md5__": "7f9961931fb7b2f34af15cf7503ad727"
+}
