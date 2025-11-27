@@ -1,0 +1,35 @@
+-4
+--geo-bypass
+--yes-playlist
+-N 10
+-R infinite
+--windows-filenames
+--no-overwrites
+--continue
+# Do not use the Last-modified header to set the file modification time.
+--no-mtime
+#--mtime
+--write-thumbnail
+--write-url-link
+--audio-multistreams
+#--write-auto-subs
+--sub-langs en,ru
+--embed-chapters
+--embed-info-json
+--embed-metadata
+--embed-subs
+--xattrs
+--force-keyframes-at-cuts
+--no-sponsorblock
+#
+# Download Russian subtitle.
+--sub-langs ru
+--write-auto-sub
+--convert-subs srt
+--embed-subs 
+#
+# Save to ~/Downloads directory.
+--output "$HOME/Downloads/yt-video/%(title)s.%(ext)s"
+#
+# Prefer 1080p or lower resolutions
+-f bestvideo[ext=mp4][width<2000][height<=1200]+bestaudio[ext=m4a]/bestvideo[ext=webm][width<2000][height<=1200]+bestaudio[ext=webm]/bestvideo[width<2000][height<=1200]+bestaudio/best[width<2000][height<=1200]/best

@@ -1,0 +1,23 @@
+
+==========================================
+set realname = "Admin"
+set from = "adm.uou@yandex.ru"
+set use_from = yes
+
+set imap_user = "adm.uou@yandex.ru"
+set imap_pass = "AfpzhxvE[nf"
+set spoolfile = "imaps://adm.uou@imap.yandex.ru"
+set folder = "imaps://imap.yandex.ru:993"
+set record = "=Sent"
+set trash = "=Trash"
+
+set ssl_starttls = yes
+set ssl_force_tls = yes
+unset imap_passive
+set imap_check_subscribed
+set mail_check = 60
+
+set smtp_url = "smtp://adm.uou@smtp.yandex.ru:25"
+set smtp_pass = "AfpzhxvE[nf"
+=======================================
+#echo "Hi! This is a test message." -s "Mutt test" your@email.com -c other@mail.com -a /home/username/testfile
